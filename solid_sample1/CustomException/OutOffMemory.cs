@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace solid_sample1
+namespace solid_sample1.CustomException
 {
-    public interface IEmailSendable
+    public class OutOffMemory :Exception
     {
-        public void SendUsingInfoEmailToUser(Users user);
-
-       
     }
 }

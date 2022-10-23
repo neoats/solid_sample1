@@ -2,7 +2,7 @@
 
 namespace solid_sample1
 {
-    public class App1 : BaseMethod ,ISmsSendable
+    public class App1 : BaseMethod ,ISmsSendable , IEmailSendableMulti
     {
         public float price { get; set; }
         public override double GetCost()
@@ -59,5 +59,7 @@ namespace solid_sample1
 
             }
         }
+
+     
     }
 }

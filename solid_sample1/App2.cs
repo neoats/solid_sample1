@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace solid_sample1
 {
-    internal class App2 : BaseMethod , ISmsSendable , IEmailSendable
+    internal class App2 : BaseMethod , ISmsSendable , IEmailSendable,IEmailSendableMulti
     {
         public float price { get; set; }
 

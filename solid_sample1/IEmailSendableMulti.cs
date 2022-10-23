@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace solid_sample1
 {
-    public interface IEmailSendable
-    {
-        public void SendUsingInfoEmailToUser(Users user);
-
-       
+    public interface IEmailSendableMulti
+    { 
+        public void SendUsingInfoEmailToUser(List<Users> user);
     }
 }
