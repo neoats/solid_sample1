@@ -36,6 +36,7 @@ namespace solid_sample1
             {
                 SendUsingInfoEmailToUser(user);
             }
+            //ask osmabi
         }
     }
 }

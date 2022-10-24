@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using solid_sample1.CustomException;
 
 namespace solid_sample1
 {
@@ -25,10 +26,16 @@ namespace solid_sample1
                 appsample.SendUsingInfoToSmsUser(new Users());
 
             }
-            catch (ExecutionEngineException ex)
+            catch (OutOfMemoryException ex)
             {
-                new SoftwareInfoLogger().LogToMainServer(ex);
+                new SoftwareInfoLogger(new MainLogger()).Log(ex.Message);
             }
+            catch (FreezeException ex)
+            {
+                new SoftwareInfoLogger(new ClusterLogger()).Log(ex.Message);
+            }
+
+            //add new logger add new exception
         }
     }
 }

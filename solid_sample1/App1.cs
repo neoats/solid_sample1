@@ -60,6 +60,10 @@ namespace solid_sample1
             }
         }
 
-     
+
+        public void SendUsingInfoEmailToUser(List<Users> user)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
